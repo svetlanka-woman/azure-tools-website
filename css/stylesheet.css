@@ -272,17 +272,26 @@ a:hover {
 }
 
 /*Content*/
-.btn-group {
-  margin-right: 30px;
+@media screen and (min-width: 960px) {
+  .btn-group {
+    max-width: 960px;
+    padding: 16px 44px 26px 44px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  .btn-group {
+    padding: 12px 32px 22px 32px;
+  }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .btn-group {
-    margin-right: 0px;
+    padding: 10px 20px 18px 20px;
   }
 }
 @media screen and (max-width: 479px) {
   .btn-group {
-    margin-right: 10px;
+    padding: 8px 10px 16px 10px;
   }
 }
 
@@ -330,7 +339,6 @@ a:hover {
 @media screen and (min-width: 960px) {
   .btn-small {
     padding: 4px 6px;
-    margin-bottom: 26px;
     font-size: 14px;
   }
   .btn-small + .btn-small {
@@ -340,7 +348,6 @@ a:hover {
 @media screen and (min-width: 768px) and (max-width: 959px) {
   .btn-small {
     padding: 3px 6px;
-    margin-bottom: 22px;
     font-size: 14px;
   }
   .btn-small + .btn-small {
@@ -350,7 +357,6 @@ a:hover {
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .btn-small {
     padding: 3px 6px;
-    margin-bottom: 18px;
     font-size: 13px;
   }
   .btn-small + .btn-small {
@@ -360,42 +366,20 @@ a:hover {
 @media screen and (max-width: 479px) {
   .btn-small {
     display: block;
-    width: 46%;
+    width: 47%;
     padding: 3px 6px;
     text-align: center;
     font-size: 12px;
+    margin-right: 1.8%;
   }
   .btn-small + .btn-small {
     margin-right: 6px;
-    margin-bottom: 14px;
-  }
-}
-
-@media screen and (min-width: 960px) {
-  .content {
-    max-width: 960px;
-    padding: 16px 20px;
-    margin: 0 auto;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 959px) {
-  .content {
-    padding: 12px 20px;
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .content {
-    padding: 10px 20px;
-  }
-}
-@media screen and (max-width: 479px) {
-  .content {
-    padding: 8px 10px;
   }
 }
 
 .progect-image {
   text-align: center;
+  margin: 0 10px 30px 10px;
 }
 .progect-image img {
   box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.6);
@@ -432,6 +416,60 @@ a:hover {
     height: 377px !important;
     box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.6);
   }
+}
+
+.modules-description {
+  color: #fff;
+  background-color: #039BC1;
+}
+.modules-description ul {
+  max-width: 700px;
+  display: block;
+  margin: 0 auto;
+  list-style: none;
+}
+@media screen and (min-width: 960px) {
+  .modules-description ul {
+    padding: 24px 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  .modules-description ul {
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .modules-description ul {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .modules-description ul {
+    padding: 20px;
+  }
+}
+.modules-description ul h3 {
+  margin: 0 0 16px 0;
+  font-size: 28px;
+  color: #9ee9f6;
+  color: #b6efff;
+  font-family: "SegoeUIBold", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+.modules-description ul li {
+  font-size: 20px;
+  padding: 10px 0;
+}
+.modules-description ul li span {
+  font-size: 22px;
+  font-family: "SegoeUIBold", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.modules-description ul li img {
+  float: left;
+  margin-right: 20px;
+}
+.modules-description ul li p {
+  margin: 18px 0;
 }
 
 .site-footer {
