@@ -187,24 +187,24 @@ a:hover {
 		padding: 8px 16px; 
 		margin-bottom: 15px;
 		& + .btn {
-		margin-left: 12px; 
-	}
+			margin-left: 8px; 
+		}
 	}
 	@media screen and (min-width: 768px) and (max-width: 959px) {
 		padding: 8px 16px;
 		font-size: 15px; 
 		margin-bottom: 11px;
 		& + .btn {
-		margin-left: 10px;
-	}
+			margin-left: 6px;
+		}
 	}
 	@media screen and (min-width: 480px) and (max-width: 767px) {
 		padding: 8px 16px;
 		font-size: 14px; 
 		margin-bottom: 6px;
 		& + .btn {
-		margin-left: 8px; 
-	}
+			margin-left: 4px; 
+		}
 	}
 	@media screen and (max-width: 479px) {
 		display: block;
@@ -212,15 +212,14 @@ a:hover {
 		padding: 8px 16px;
 		font-size: 14px;
 		& + .btn {
-		margin-top: 10px;
-		margin-left: 0; 
+			margin-top: 10px;
+			margin-left: 0; 
 		}
 	} 
 }
 
 /*Content*/
 .btn-group {
-	// margin-right: 30px;
 	@media screen and (min-width: 960px) {
 		max-width: 960px;
 		padding: 16px 44px 26px 44px;
@@ -382,30 +381,58 @@ a:hover {
 	}
 }
 
-
 .site-footer {
-	padding-top: 2rem;
-	margin-top: 2rem;
-	border-top: solid 1px #eff0f1; }
+	text-align: center;
+	.btn-group {
+		@media screen and (min-width: 960px) {
+			padding: 10px 44px 18px 44px;
+		}
+		@media screen and (min-width: 768px) and (max-width: 959px) {
+			padding: 12px 32px 22px 32px;		
+		}
+		@media screen and (min-width: 480px) and (max-width: 767px) {
+			padding: 10px 20px 18px 20px;
+		}
+		@media screen and (max-width: 479px) {
+			padding: 8px 10px 16px 10px;
+		}
+	}
+}
 
-.site-footer-owner {
-	display: block;
-	font-weight: bold; }
+.footer-download {
+	background-color: $bg-color-header;
+	@media screen and (min-width: 960px) {
+		padding: 16px;
+	}
+	@media screen and (min-width: 768px) and (max-width: 959px) {
+		padding: 10px; 
+	}
+	@media screen and (min-width: 480px) and (max-width: 767px) {
+		padding: 10px; 
+	} 
+	@media screen and (max-width: 479px) {
+		padding: 10px; 
+	} 
+	.btn {
+		margin-bottom: 0;
+	}
+}
 
-.site-footer-credits {
-	color: #819198; }
-
-@media screen and (min-width: 64em) {
-	.site-footer {
-		font-size: 1rem; } }
-
-@media screen and (min-width: 42em) and (max-width: 64em) {
-	.site-footer {
-		font-size: 1rem; } }
-
-@media screen and (max-width: 42em) {
-	.site-footer {
-		font-size: 0.9rem; } }
+.footer-owner {
+	color: $color-font-footer;
+	font-size: 14px;
+	font-family: Arial, sans-serif;
+	padding-bottom: 24px;
+	.fa {
+		font-size: 16px;
+		padding-right: 6px; 
+		vertical-align: -10%;
+	}
+	a {
+		margin-left: 10px;
+		color: $color-font-footer;
+	}
+}
 
 .clearfloat {
 	clear: both;
