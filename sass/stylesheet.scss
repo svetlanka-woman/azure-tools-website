@@ -347,35 +347,109 @@ a:hover {
 			padding: 24px 20px;
 		}
 		@media screen and (min-width: 768px) and (max-width: 959px) {
-			padding: 20px; 
+			padding: 20px;
+			max-width: 670px; 
 		}
 		@media screen and (min-width: 480px) and (max-width: 767px) {
-			padding: 20px;
+			padding: 20px 15px 1px 15px;
+			max-width: 506px;
 		} 
 		@media screen and (max-width: 479px) {
-			padding: 20px; 
+			padding: 20px 10px 1px 10px; 
 		}
 		h3 {
 			margin: 0 0 16px 0;
-			font-size: 28px;
 			color: lighten($bg-color-header, 10%);
 			color: #b6efff;
 			font-family: $font-family-bold;
 			text-align: center;
+			@media screen and (min-width: 960px) {
+				font-size: 28px;
+			}
+			@media screen and (min-width: 768px) and (max-width: 959px) {
+				font-size: 26px; 
+			}
+			@media screen and (min-width: 480px) and (max-width: 767px) {
+				font-size: 24px;
+				margin: 6px 0px 30px 10px;
+				line-height: 28px;
+			} 
+			@media screen and (max-width: 479px) {
+				font-size: 22px; 
+				margin: 4px 0px 24px 10px;
+				line-height: 24px;
+			}
 		}
 		li {
-			font-size: 20px;
-			padding: 10px 0;
+			@media screen and (min-width: 960px) {
+				font-size: 20px;
+				padding: 10px 0;
+			}
+			@media screen and (min-width: 768px) and (max-width: 959px) {
+				font-size: 19px;
+				padding: 9px 0;
+			}
+			@media screen and (min-width: 480px) and (max-width: 767px) {
+				font-size: 18px;
+				padding: 0;
+			} 
+			@media screen and (max-width: 479px) {
+				font-size: 16px;
+				padding: 0;
+			}
 			span {
-				font-size: 22px;
 				font-family: $font-family-bold;
+				@media screen and (min-width: 960px) {
+					font-size: 22px;
+				}
+				@media screen and (min-width: 768px) and (max-width: 959px) {
+					font-size: 21px;
+				}
+				@media screen and (min-width: 480px) and (max-width: 767px) {
+					font-size: 20px;
+				} 
+				@media screen and (max-width: 479px) {
+					font-size: 18px;
+				}
 			}
 			img {
 				float: left;
-				margin-right: 20px;
+				@media screen and (min-width: 960px) {
+					margin-right: 20px;
+				}
+				@media screen and (min-width: 768px) and (max-width: 959px) {
+					margin-right: 20px;
+					width: 110px !important; 
+					height: 95px !important;
+				}
+				@media screen and (min-width: 480px) and (max-width: 767px) {
+					width: 100px !important; 
+					height: 86px !important;
+					margin-top: -2px;
+				} 
+				@media screen and (max-width: 479px) {
+					width: 80px !important; 
+					height: 70px !important;
+					margin-top: -2px;
+				}
 			}
 			p {
-				margin: 18px 0;
+				@media screen and (min-width: 960px) {
+					margin: 18px 0;
+				}
+				@media screen and (min-width: 768px) and (max-width: 959px) {
+					margin: 18px 0; 
+				}
+				@media screen and (min-width: 480px) and (max-width: 767px) {
+					min-height: 86px;	
+					margin: 0 0 27px 115px;
+					line-height: 24px;
+				} 
+				@media screen and (max-width: 479px) {
+					min-height: 70px;	
+					margin: 0 0 27px 90px;
+					line-height: 20px;
+				}
 			}
 		}
 	}
