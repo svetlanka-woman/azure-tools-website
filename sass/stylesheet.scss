@@ -21,6 +21,10 @@ a:hover {
 	text-decoration: underline; 
 }
 
+.clearfloat {
+	clear: both;
+}
+
 /*Header*/
 
 .page-header {
@@ -130,7 +134,7 @@ a:hover {
 	}
 	@media screen and (max-width: 479px) {
 		font-size: 19px;
-		line-height: 20px;
+		line-height: 22px;
 		margin-bottom: 15px;
 		padding: 0 10px;
 	} 
@@ -155,12 +159,12 @@ a:hover {
 	@media screen and (min-width: 480px) and (max-width: 767px) {
 		width: 430px;
 		font-size: 16px;
-		line-height: 20px;
+		line-height: 22px;
 		margin-bottom: 18px;
 	}
 	@media screen and (max-width: 479px) {
 		font-size: 15px;
-		line-height: 16px;
+		line-height: 20px;
 		padding: 0 10px;
 		margin-bottom: 18px;
 	} 
@@ -232,7 +236,7 @@ a:hover {
 		padding: 10px 20px 18px 20px;
 	}
 	@media screen and (max-width: 479px) {
-		padding: 8px 10px 16px 10px;
+		padding: 8px 10px 26px 10px;
 	}
 }
 
@@ -455,6 +459,8 @@ a:hover {
 	}
 }
 
+/*Footer*/
+
 .site-footer {
 	text-align: center;
 	.btn-group {
@@ -462,13 +468,13 @@ a:hover {
 			padding: 10px 44px 18px 44px;
 		}
 		@media screen and (min-width: 768px) and (max-width: 959px) {
-			padding: 12px 32px 22px 32px;		
+			padding: 9px 32px 18px 32px;		
 		}
 		@media screen and (min-width: 480px) and (max-width: 767px) {
-			padding: 10px 20px 18px 20px;
+			padding: 8px 20px 22px 20px;
 		}
 		@media screen and (max-width: 479px) {
-			padding: 8px 10px 16px 10px;
+			padding: 8px 10px 32px 10px;
 		}
 	}
 }
@@ -479,10 +485,10 @@ a:hover {
 		padding: 16px;
 	}
 	@media screen and (min-width: 768px) and (max-width: 959px) {
-		padding: 10px; 
+		padding: 14px; 
 	}
 	@media screen and (min-width: 480px) and (max-width: 767px) {
-		padding: 10px; 
+		padding: 12px; 
 	} 
 	@media screen and (max-width: 479px) {
 		padding: 10px; 
@@ -497,17 +503,29 @@ a:hover {
 	font-size: 14px;
 	font-family: Arial, sans-serif;
 	padding-bottom: 24px;
+	@media screen and (min-width: 480px) and (max-width: 767px) {
+		padding-bottom: 20px;
+		font-size: 13px; 
+	}
+	@media screen and (max-width: 479px) {
+		padding-bottom: 24px; 
+		font-size: 12px;
+	} 
 	.fa {
 		font-size: 16px;
 		padding-right: 6px; 
-		vertical-align: -10%;
+		vertical-align: -6%;
+		@media screen and (min-width: 480px) and (max-width: 767px) {
+			font-size: 15px;
+			vertical-align: -2%;
+		} 
+		@media screen and (max-width: 479px) {
+			font-size: 14px;
+			vertical-align: -3%;
+		}
 	}
 	a {
 		margin-left: 10px;
 		color: $color-font-footer;
 	}
-}
-
-.clearfloat {
-	clear: both;
 }
