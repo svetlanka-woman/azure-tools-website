@@ -474,13 +474,13 @@ a:hover {
 	color: $color-font-footer;
 	font-size: 14px;
 	font-family: Arial, sans-serif;
-	padding: 36px 0;
+	padding: 24px 0;
 	@media screen and (min-width: 480px) and (max-width: 767px) {
-		padding: 28px 0;
+		padding: 18px 0;
 		font-size: 13px; 
 	}
 	@media screen and (max-width: 479px) {
-		padding: 26px 0; 
+		padding: 16px 0; 
 		font-size: 12px;
 	} 
 	.fa {
